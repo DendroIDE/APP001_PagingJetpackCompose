@@ -34,11 +34,13 @@ fun CharactersList(characters: LazyPagingItems<CharacterModel>) {
 
 @Composable
 fun ItemList(characterModel: CharacterModel) {
-    Box(modifier = Modifier
-        .fillMaxWidth()
-        .height(200.dp)
-        .background(Color.Black)
-        .padding(46.dp)) {
-        Text(text = characterModel.name)
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(46.dp)
+            .height(200.dp)
+            .background(Color.Black)
+    ) {
+        Text(text = characterModel.name, color = Color.White)
     }
 }
